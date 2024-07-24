@@ -1,0 +1,13 @@
+words = [
+    "apple", "beautiful", "cat", "rat", "pink", "yellow", "house", "dog", "book", "tree",
+    "happy", "sad", "sun", "moon", "star", "sky", "cloud", "flower", "river", "ocean",
+    "mountain", "road", "car", "bike", "bus", "train", "plane", "ship", "ball", "box",
+    "chair", "table", "pen", "pencil", "computer", "phone", "music", "dance", "sing", "run",
+    "jump", "swim", "eat", "drink", "sleep", "wake", "love", "hate", "laugh", "cry", "smile",
+    "frown", "big", "small", "fast", "slow", "hot", "cold", "old", "young", "new", "good",
+    "bad", "happy", "angry", "kind", "brave", "strong", "weak", "quiet", "loud", "clear",
+    "dark", "light", "simple", "complex", "safe", "dangerous", "soft", "hard", "smooth",
+    "rough", "sweet", "sour", "bitter", "spicy", "fragrant", "fresh", "stale", "rich", "poor",
+    "busy", "lazy", "tidy", "messy", "modern", "ancient", "open", "closed", "empty", "full",
+    "dry", "wet", "thick", "thin"
+]
