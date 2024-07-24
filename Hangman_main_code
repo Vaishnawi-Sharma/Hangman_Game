@@ -1,0 +1,37 @@
+# Hangman_Game
+import random
+import Hangman_stages
+import Hangman_game_words
+import Hangman_logo
+
+lives=6
+choosen_word=random.choice(Hangman_game_words.words)
+Hangman_logo.print_hangman_logo()
+print(" Welcome in Hangman Game !!!")
+print ("Rules : \n 1.Guess the hidden word by suggesting letters.\n 2. Incorrect guesses lead to parts of a hangman being drawn.")
+print(" 3.You win by guessing the word before the hangman is complete.\n 4. Use logic and word knowledge to solve the puzzle.\n")
+
+display=[]
+for i in range(len(choosen_word)):
+    display+="_"
+print(display)  
+end_point=False   
+while not end_point:
+    guessed_letter=input("Choose an alphabet :").lower()
+    for position in range(len(choosen_word )):
+         letter=choosen_word[position]
+         if letter==guessed_letter:
+            display[position]=guessed_letter
+    print(display)  
+                  
+    if guessed_letter not in choosen_word:
+        lives-=1
+        if lives==0 :
+            end_point=True
+            print("\n<< You Lose>>\n")
+    if '_' not in display:
+        end_point=True
+        print("\n<<You Win>>\n")
+        
+    print(Hangman_stages.stages[lives])        
+    
